@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TelaLogin.CadProduto"
+             Title="CadProduto">
+    <StackLayout>
+
+        <Label>Nome:</Label>
+        <Entry Placeholder="Nome"
+               x:Name="txtNome"></Entry>
+
+        <Label>Descrição:</Label>
+        <Entry Placeholder="Descrição"
+               x:Name="txtDescricao"></Entry>
+
+        <Label></Label>
+        <Entry></Entry>
+        
+        <Label></Label>
+        <Entry></Entry>
+
+        <Label></Label>
+        <Entry></Entry>
+
+        <Label></Label>
+        <Entry></Entry>
+
+        <Label></Label>
+        <Entry></Entry>
+        <Button 
+            Text="Cadastrar"
+            TextColor="White"
+            BackgroundColor="Blue"/>
+
+    </StackLayout>    
+</ContentPage>

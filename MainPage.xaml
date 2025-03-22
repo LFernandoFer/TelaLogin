@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TelaLogin.MainPage">
+
+    <StackLayout Padding="20"
+                 VerticalOptions="Center">
+        <Frame CornerRadius="10"
+               BackgroundColor="Grey">
+            <StackLayout>
+                <Label Text="Login"
+               FontSize="40"
+               HorizontalTextAlignment="Center"
+               FontAttributes="Bold"/>
+
+                <StackLayout>
+                    <Label Text="Usuário:"
+                       Margin="0,20,0,0"/>
+                    <Entry x:Name="txtUsuario"
+                     Placeholder="Usuário"/>
+
+                    <Label Text="Senha:"
+                       Margin="0,20,0,0"/>
+                    <Entry x:Name="txtSenha"
+                     Placeholder="Senha"
+                   IsPassword="True"/>
+
+                    <StackLayout Orientation="Horizontal">
+                        <CheckBox x:Name="cbxMostrarSenha"
+                              Color="Black"
+                              CheckedChanged="cbxMostrarSenha_CheckedChage"/>
+                        <Label Text="Mostrar Senha"
+                               HorizontalTextAlignment="Start"
+                               VerticalTextAlignment="Center"/>
+
+                        <Label.GestureRecognizers>
+
+                            <TapGestureRecognizer Tapped="tapMostrarSenha_Tapped"/>
+
+                        </Label.GestureRecognizers>
+
+                        <Label/>
+
+                    </StackLayout>
+
+                    <Button Text="Entrar"
+                    x:Name="btnEntrar"
+                    Clicked="btnEntrar_Clicked"
+                    Margin="0,20,0,0"
+                    BackgroundColor="Purple"
+                    TextColor="White"/>
+
+                    <Label HorizontalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Não possui uma conta?"/>
+                                <Span Text="Cadastre-se"
+                                FontAttributes="Bold"
+                                TextDecorations="Underline"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="tapCadastrar_Tapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>

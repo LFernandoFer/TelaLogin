@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TelaLogin.PagCad"
+             Title="Cadastro">
+    <StackLayout>
+        <Label>Cadastre-se</Label>
+
+        <Label>Usuário: </Label>
+        <Entry x:Name="txtUsuario" Placeholder="Usuário"/>
+
+
+        <Label>Senha: </Label>
+        <Entry x:Name="txtSenha" Placeholder="Senha"/>
+
+
+        <Label>Idade: </Label>
+        <Entry x:Name="txtIdade" Placeholder="Idade"/>
+
+
+        <Label>Nome: </Label>
+        <Entry x:Name="txtNome" Placeholder="Nome"/>
+
+        <Label>Email:</Label>
+        <Entry x:Name="txtEmail" Placeholder="Email"/>
+        <Button BackgroundColor="Purple"
+                Text="Cadastrar"
+                Clicked="btnCadastrar_Clicked"
+                TextColor="White"
+                Padding="15"></Button>
+        <Button Text="Voltar"
+        TextColor="White"
+        BackgroundColor="MediumPurple"
+        Clicked="btnVoltar_Clicked"
+        Padding="15"
+        ></Button>
+    </StackLayout>
+</ContentPage>

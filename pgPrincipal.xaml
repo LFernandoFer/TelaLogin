@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TelaLogin.pgPrincipal"
+             Title="Início">
+    <StackLayout>
+        <Label x:Name="txtUsuarioLogado"
+               FontSize="Header"
+               Padding="20"
+               HorizontalTextAlignment="Center"/>
+        <Label x:Name="txtIdade"
+               FontSize="Large"/>
+        <Label x:Name="txtNome"
+               FontSize="Large"/>
+        <Label x:Name="txtEmail"
+               FontSize="Large"/>
+        <Button x:Name="btnVoltar"
+        Text="Voltar"
+        Clicked="btnVoltar_Cliked"
+        BackgroundColor="MediumPurple"
+        TextColor="White"
+        VerticalOptions="End"/>
+    </StackLayout>
+</ContentPage>
