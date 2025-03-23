@@ -8,12 +8,20 @@
                FontSize="Header"
                Padding="20"
                HorizontalTextAlignment="Center"/>
-        <Label x:Name="txtIdade"
-               FontSize="Large"/>
-        <Label x:Name="txtNome"
-               FontSize="Large"/>
-        <Label x:Name="txtEmail"
-               FontSize="Large"/>
+        <Button x:Name="btnCadProd"
+                Text="Cadastrar produto"
+                BackgroundColor="Purple"
+                TextColor="White"
+                Clicked="btnCadProd_Clicked"
+                VerticalOptions="End"/>
+        
+        <Button x:Name="btnViewProduto"
+                Text="Vizualizar Produto"
+                BackgroundColor="Purple"
+                TextColor="White"
+                Clicked="btnView_Cliked"
+                VerticalOptions="End"/>
+        
         <Button x:Name="btnVoltar"
         Text="Voltar"
         Clicked="btnVoltar_Cliked"

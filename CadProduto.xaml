@@ -7,30 +7,39 @@
 
         <Label>Nome:</Label>
         <Entry Placeholder="Nome"
-               x:Name="txtNome"></Entry>
+               x:Name="txtNome"/>
 
         <Label>Descrição:</Label>
         <Entry Placeholder="Descrição"
-               x:Name="txtDescricao"></Entry>
-
-        <Label></Label>
-        <Entry></Entry>
+               x:Name="txtDescricao"/>
         
-        <Label></Label>
-        <Entry></Entry>
+        <Label>Marca:</Label>
+                <Entry Placeholder="Marca"
+                       x:Name="txtMarca"/>
 
-        <Label></Label>
-        <Entry></Entry>
+        <Label>Preço:</Label>
+        <Entry Placeholder="Preço"
+            x:Name="txtPreco"/>
 
-        <Label></Label>
-        <Entry></Entry>
 
-        <Label></Label>
-        <Entry></Entry>
+        <Label>Código de Barras</Label>
+        <Entry Placeholder="Código de barras"
+               x:Name="txtCodBar"/>
+        
+        <Label>Unidade de Medida:</Label>
+        <Entry Placeholder="Unidade de Medida"
+               x:Name="txtUnMed"/>
+
+        <Label>Quantidade:</Label>
+        <Entry Placeholder="Quantidade"
+               x:Name="txtQtd"/>
         <Button 
             Text="Cadastrar"
             TextColor="White"
-            BackgroundColor="Blue"/>
+            BackgroundColor="Purple"
+            x:Name="btnCadastrar"
+            Clicked="btnCadastrar_Clicked"
+            />
 
     </StackLayout>    
 </ContentPage>

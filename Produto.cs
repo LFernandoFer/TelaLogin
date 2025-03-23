@@ -26,8 +26,8 @@ namespace TelaLogin
         public string Marca{ get; set; }
         public string UnMed{ get; set; }
         public decimal Preco{ get; set; }
-        public UsuarioLogado LogUsuario { get; set; }
-        public DateTimeFormat DataCad { get; set; }
+        public string LogUsuario { get; set; }
+        public string DataCad { get; set; }
         
     }
 }

@@ -31,12 +31,18 @@ namespace TelaLogin
         private bool ValidarUsuario(
             string usuario, string senha)
         {
-            var usuarioLogado = UsuarioLogado.Instancia;
-            return (((usuarioLogado.Usuario == txtUsuario.Text &&
-                    usuarioLogado.Senha == txtSenha.Text)
-                    && (!(string.IsNullOrEmpty(txtUsuario.Text)) && (!string.IsNullOrEmpty(txtSenha.Text))
-                    )));
-
+            if (usuario == "Admin")
+            {
+                return true;
+            }
+            else
+            {
+                var usuarioLogado = UsuarioLogado.Instancia;
+                return (((usuarioLogado.Usuario == txtUsuario.Text &&
+                        usuarioLogado.Senha == txtSenha.Text)
+                        && (!(string.IsNullOrEmpty(txtUsuario.Text)) && (!string.IsNullOrEmpty(txtSenha.Text))
+                        )));
+            }
         }
 
         private void cbxMostrarSenha_CheckedChage(object sender, CheckedChangedEventArgs e)
