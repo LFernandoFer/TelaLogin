@@ -1,5 +1,4 @@
 using Microsoft.Maui.Devices;
-
 namespace TelaLogin;
 
 public partial class PagCad : ContentPage
@@ -29,4 +28,17 @@ public partial class PagCad : ContentPage
     {
         Navigation.PopAsync();
     }
+
+    private void txtIdade_TextChanged(object sender, TextChangedEventArgs e)
+    {
+        Entry entry = sender as Entry;
+
+        // Se o texto for vazio ou não numérico, bloqueia a alteração
+        if (!string.IsNullOrEmpty(entry?.Text) && !entry.Text.All(char.IsDigit))
+        {
+            // Remove o último caractere inserido, que não é um número
+            entry.Text = entry.Text.Substring(0, entry.Text.Length - 1);
+        }
+    }
+
 }

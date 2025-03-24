@@ -2,26 +2,26 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TelaLogin.ViewProd"
-             Title="ViewProd">
+             Title="Visualizar Produto">
 
     <StackLayout>
-        <Label x:Name="txtNome">Nome:</Label>
+        <Label x:Name="txtNome">Nome: </Label>
 
-        <Label x:Name="txtDescricao">Descrição</Label>
+        <Label x:Name="txtDescricao">Descrição: </Label>
 
-        <Label x:Name="txtMarca">Marca</Label>
+        <Label x:Name="txtMarca">Marca: </Label>
 
-        <Label x:Name="txtPreco">Preço</Label>
+        <Label x:Name="txtPreco">Preço: </Label>
 
-        <Label x:Name="txtCodBar">Código de Barras</Label>
+        <Label x:Name="txtCodBar">Código de Barras: </Label>
 
-        <Label x:Name="txtUnMed">Unidade de medida</Label>
+        <Label x:Name="txtUnMed">Unidade de medida: </Label>
 
-        <Label x:Name="txtQtd">Quantidade</Label>
+        <Label x:Name="txtQtd">Quantidade: </Label>
 
-        <Label x:Name="txtUsuario">Usuário</Label>
+        <Label x:Name="txtUsuario">Usuário: </Label>
 
-        <Label x:Name="txtData">Data</Label>
+        <Label x:Name="txtData">Data: </Label>
 
 
         <Button
@@ -31,6 +31,7 @@
             BackgroundColor="Purple"
             TextColor="White"
             VerticalOptions="End"
+            Margin="5"
             />
 
         <Button
@@ -38,7 +39,9 @@
             Text="Voltar"
             Clicked="btnVoltar_Clicked"
             BackgroundColor="MediumPurple"
+            TextColor="White"
             VerticalOptions="End"
+            Margin="5"
             />
     </StackLayout>
 </ContentPage>

@@ -20,13 +20,15 @@
                 BackgroundColor="Purple"
                 TextColor="White"
                 Clicked="btnView_Cliked"
-                VerticalOptions="End"/>
+                VerticalOptions="End"
+                Margin="5"/>
         
         <Button x:Name="btnVoltar"
-        Text="Voltar"
-        Clicked="btnVoltar_Cliked"
-        BackgroundColor="MediumPurple"
-        TextColor="White"
-        VerticalOptions="End"/>
+                Text="Voltar"
+                Clicked="btnVoltar_Cliked"
+                BackgroundColor="MediumPurple"
+                TextColor="White"
+                VerticalOptions="End"
+                Margin="5"/>
     </StackLayout>
 </ContentPage>

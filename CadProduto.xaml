@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TelaLogin.CadProduto"
-             Title="CadProduto">
+             Title="Cadastrar Produto">
     <StackLayout>
 
         <Label>Nome:</Label>
@@ -14,17 +14,20 @@
                x:Name="txtDescricao"/>
         
         <Label>Marca:</Label>
-                <Entry Placeholder="Marca"
-                       x:Name="txtMarca"/>
+        <Entry Placeholder="Marca"
+            x:Name="txtMarca"/>
 
         <Label>Preço:</Label>
         <Entry Placeholder="Preço"
-            x:Name="txtPreco"/>
+            x:Name="txtPreco"
+            Keyboard="Numeric"
+            TextChanged="txtPreco_TextChanged"/>
 
 
         <Label>Código de Barras</Label>
         <Entry Placeholder="Código de barras"
-               x:Name="txtCodBar"/>
+               x:Name="txtCodBar"
+               Keyboard="Numeric"/>
         
         <Label>Unidade de Medida:</Label>
         <Entry Placeholder="Unidade de Medida"
@@ -32,14 +35,24 @@
 
         <Label>Quantidade:</Label>
         <Entry Placeholder="Quantidade"
-               x:Name="txtQtd"/>
+               x:Name="txtQtd"
+               Keyboard="Numeric"
+               TextChanged="txtQtd_TextChanged"/>
         <Button 
             Text="Cadastrar"
             TextColor="White"
             BackgroundColor="Purple"
             x:Name="btnCadastrar"
             Clicked="btnCadastrar_Clicked"
+            Margin="5"
             />
+        <Button 
+        Text="Voltar"
+        TextColor="White"
+        BackgroundColor="MediumPurple"
+        x:Name="btnVoltar"
+        Clicked="btnVoltar_Clicked"
+        Margin="5"/>
 
     </StackLayout>    
 </ContentPage>

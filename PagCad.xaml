@@ -7,7 +7,8 @@
         <Label>Cadastre-se</Label>
 
         <Label>Usuário: </Label>
-        <Entry x:Name="txtUsuario" Placeholder="Usuário"/>
+        <Entry x:Name="txtUsuario" Placeholder="Usuário"
+               />
 
 
         <Label>Senha: </Label>
@@ -15,7 +16,8 @@
 
 
         <Label>Idade: </Label>
-        <Entry x:Name="txtIdade" Placeholder="Idade"/>
+        <Entry x:Name="txtIdade" Placeholder="Idade"
+               TextChanged="txtIdade_TextChanged"/>
 
 
         <Label>Nome: </Label>
@@ -23,16 +25,19 @@
 
         <Label>Email:</Label>
         <Entry x:Name="txtEmail" Placeholder="Email"/>
+
+
         <Button BackgroundColor="Purple"
-                Text="Cadastrar"
-                Clicked="btnCadastrar_Clicked"
-                TextColor="White"
-                Padding="15"></Button>
+            Text="Cadastrar"
+            Clicked="btnCadastrar_Clicked"
+            TextColor="White"
+            Padding="15"/>
+
         <Button Text="Voltar"
-        TextColor="White"
-        BackgroundColor="MediumPurple"
-        Clicked="btnVoltar_Clicked"
-        Padding="15"
-        ></Button>
+            TextColor="White"
+            BackgroundColor="MediumPurple"
+            Clicked="btnVoltar_Clicked"
+            Padding="15"/>
+        
     </StackLayout>
 </ContentPage>
