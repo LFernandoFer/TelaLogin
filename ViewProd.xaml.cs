@@ -23,6 +23,8 @@ public partial class ViewProd : ContentPage
 
         txtUsuario.Text += produto.LogUsuario.ToString();
         txtData.Text += produto.DataCad.ToString();
+
+        imgCarro.Source = produto.DiretorioImagem;
     }
 
     private void btnCadProd_Clicked(object sender, EventArgs e)

@@ -3,56 +3,66 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TelaLogin.CadProduto"
              Title="Cadastrar Produto">
-    <StackLayout>
+    <ScrollView>
+        <StackLayout>
 
-        <Label>Nome:</Label>
-        <Entry Placeholder="Nome"
-               x:Name="txtNome"/>
+            <Label>Nome:</Label>
+            <Entry Placeholder="Nome"
+           x:Name="txtNome"/>
 
-        <Label>Descrição:</Label>
-        <Entry Placeholder="Descrição"
-               x:Name="txtDescricao"/>
-        
-        <Label>Marca:</Label>
-        <Entry Placeholder="Marca"
-            x:Name="txtMarca"/>
+            <Label>Descrição:</Label>
+            <Entry Placeholder="Descrição"
+           x:Name="txtDescricao"/>
 
-        <Label>Preço:</Label>
-        <Entry Placeholder="Preço"
-            x:Name="txtPreco"
-            Keyboard="Numeric"
-            TextChanged="txtPreco_TextChanged"/>
+            <Label>Marca:</Label>
+            <Entry Placeholder="Marca"
+        x:Name="txtMarca"/>
+
+            <Label>Preço:</Label>
+            <Entry Placeholder="Preço"
+        x:Name="txtPreco"
+        Keyboard="Numeric"
+        TextChanged="txtPreco_TextChanged"/>
 
 
-        <Label>Código de Barras</Label>
-        <Entry Placeholder="Código de barras"
-               x:Name="txtCodBar"
-               Keyboard="Numeric"/>
-        
-        <Label>Unidade de Medida:</Label>
-        <Entry Placeholder="Unidade de Medida"
-               x:Name="txtUnMed"/>
+            <Label>Código de Barras</Label>
+            <Entry Placeholder="Código de barras"
+           x:Name="txtCodBar"
+           Keyboard="Numeric"/>
 
-        <Label>Quantidade:</Label>
-        <Entry Placeholder="Quantidade"
-               x:Name="txtQtd"
-               Keyboard="Numeric"
-               TextChanged="txtQtd_TextChanged"/>
-        <Button 
-            Text="Cadastrar"
-            TextColor="White"
-            BackgroundColor="Purple"
-            x:Name="btnCadastrar"
-            Clicked="btnCadastrar_Clicked"
-            Margin="5"
-            />
-        <Button 
-        Text="Voltar"
+            <Label>Unidade de Medida:</Label>
+            <Entry Placeholder="Unidade de Medida"
+           x:Name="txtUnMed"/>
+
+            <Label>Quantidade:</Label>
+            <Entry Placeholder="Quantidade"
+           x:Name="txtQtd"
+           Keyboard="Numeric"
+           TextChanged="txtQtd_TextChanged"/>
+
+            <Image x:Name="imgCarro" 
+                Source="icon_car.png"
+           HeightRequest="100"
+           WidthRequest="200"/>
+
+            <Button x:Name="btnAddImg" Text="Adicionar Imagem"
+                    Clicked="btnAddImg_Clicked"/>
+            <Button 
+        Text="Cadastrar"
         TextColor="White"
-        BackgroundColor="MediumPurple"
-        x:Name="btnVoltar"
-        Clicked="btnVoltar_Clicked"
-        Margin="5"/>
+        BackgroundColor="Purple"
+        x:Name="btnCadastrar"
+        Clicked="btnCadastrar_Clicked"
+        Margin="5"
+        />
+            <Button 
+    Text="Voltar"
+    TextColor="White"
+    BackgroundColor="MediumPurple"
+    x:Name="btnVoltar"
+    Clicked="btnVoltar_Clicked"
+    Margin="5"/>
 
-    </StackLayout>    
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

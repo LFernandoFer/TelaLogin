@@ -23,7 +23,9 @@ public partial class CadProduto : ContentPage
 		produto.LogUsuario = usuarioLogado.Usuario;
 		produto.DataCad = DateTime.Now.ToString();
 
-		DisplayAlert("Sucesso!!", "Produto cadastrado com Sucesso"
+        produto.DiretorioImagem = DirImagem;
+
+    DisplayAlert("Sucesso!!", "Produto cadastrado com Sucesso"
 			, "OK");
 
         Navigation.PopAsync();
@@ -44,6 +46,23 @@ public partial class CadProduto : ContentPage
     private void btnVoltar_Clicked(object sender, EventArgs e)
     {
 		Navigation.PopAsync();
+    }
+    string DirImagem;
+    private async void btnAddImg_Clicked(object sender, EventArgs e)
+    {
+        //variavel para armazenar a imagem
+
+        //Utilizar o componente padrao de seleçao de imagem
+        var imagemSelecionada =
+            await MediaPicker.PickPhotoAsync();
+
+        //Validar se uma imagem foi selecionada
+        if (imagemSelecionada != null)
+        {
+            //Recupero o Dir da imagem selecionada 
+            DirImagem = imagemSelecionada.FullPath;
+            imgCarro.Source = DirImagem;
+        }
     }
     #region TextChanged
 

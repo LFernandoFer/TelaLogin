@@ -23,6 +23,8 @@
 
         <Label x:Name="txtData">Data: </Label>
 
+        <Image x:Name="imgCarro"
+               HeightRequest="300"/>
 
         <Button
             x:Name="btnCadastrar"

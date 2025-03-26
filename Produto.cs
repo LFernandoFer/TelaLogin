@@ -28,8 +28,10 @@ namespace TelaLogin
         public decimal Preco{ get; set; }
         public string LogUsuario { get; set; }
         public string DataCad { get; set; }
-        
-    }
+
+        public string DiretorioImagem { get; set; }
+
+}
 }
 
 
